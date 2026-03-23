@@ -10,5 +10,5 @@ function FindProxyForURL(url, host) {
         return "DIRECT";
     }
 
-    return "PROXY testq123:testq123@38.213.248.179:2333";
+    return "PROXY 127.0.0.1:10809";
 }
