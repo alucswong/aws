@@ -1,6 +1,6 @@
 function FindProxyForURL(url, host) {
     url = url.toLowerCase();
-
+    if (host == "127.0.0.1") return "DIRECT";
     if (shExpMatch(url, "*\\.mp4") ||
         shExpMatch(url, "*\\.apk") ||
         shExpMatch(url, "*\\.jpg") ||
